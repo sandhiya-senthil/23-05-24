@@ -1,0 +1,15 @@
+n = int(input("Enter how many values you want to read: "))
+array1 = []
+array2 = []
+print("Enter values for first array:")
+for i in range(n):
+    value = float(input(f"Enter value {i+1}: "))
+    array1.append(value)
+print("Enter values for second array:")
+for i in range(n):
+    value = float(input(f"Enter value {i+1}: "))
+    array2.append(value)
+if array1 == array2:
+    print("Arrays are the same.")
+else:
+    print("Arrays are different.")
