@@ -1,0 +1,9 @@
+n = int(input("Enter the size of the array: "))
+arr = []
+for i in range(n):
+    value = int(input(f"Enter element {i+1}: "))
+    arr.append(value)
+total_sum = (n - 1) * (n) // 2
+arr_sum = sum(arr)
+repetitive_element = arr_sum - total_sum
+print("The repetitive element is:", repetitive_element)
